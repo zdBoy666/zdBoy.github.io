@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    <title>比样的孩子们</title>
+</head>
+<body>
+   
+
+    <div class="zdBoy-app">
+        <div class="top-name">
+              <h1 class="text-primary">zdBoy-app</h1>
+        </div>
+
+        <div class="zd-form">
+           <input type="text" class="zd-text" placeholder="cool~zd">
+           <div class="zd-button">add this</div>
+        </div>
+
+        <div class="item completed">
+
+            <div>
+            <input type="checkbox" class="choice">
+            <span class="choice-name">飞一场</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+
+            <div>
+            <input type="checkbox" class="choice">
+            <span class="choice-name">开一场</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+
+         <div class="item">
+
+            <div>
+            <input type="checkbox" class="choice">
+            <span class="choice-name">牛一场</span>
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+
+        <div class="zd-hero">
+            <div>
+                <a href ="http://www.baidu.com"><img src="zhong.jpg"width=100 height="100"/></a>
+            </div>
+             <div>
+                <a href ="https://www.bilibili.com/video/BV1AUK8z9EPG/"><img src="zdBoy.jpg"width=100 height="100"/></a>
+            </div>
+             <div>
+                <a href ="https://www.bilibili.com/video/BV1bnZqYTEEM/"><img src="da.jpg"width=100 height="100"/></a>
+            </div>
+            
+        </div>
+    </div>
+
+<!--  样式区------------------------------------------------->
+   <!--opacity透明度
+       text-decoration: line-through;划线-->
+     <style>
+        body{
+           background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,251,1)
+           );
+        }
+        .zd-hero{
+            display: flex;
+            margin:  auto 50px;
+            justify-content: space-between;
+        }
+        .zdBoy-app{
+            width: 98%;
+            height: 500px;
+            background-color: rgb(240, 248, 255);
+            border-radius: 20px;
+
+            margin-top: 40px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            margin-left: 1%;
+        }
+        .top-name{
+            text-align: center;
+        }
+        .zd-form{
+            display: flex;
+            margin-left: 10px;
+        }
+        .zd-text{
+            border: 1px solid #dfe1e5;
+            width: 60%;
+            height: 30px;
+            outline: none;
+            border-radius: 20px 0 0 20px;
+           
+        }
+        .zd-button{
+            width: 100px;
+            height: 30px;
+            border-radius: 0 20px 20px 0;
+            text-align: center;
+            line-height: 30px;
+            background: linear-gradient(
+            to right,
+            rgb(113,65,168),
+            rgba(44,114,251,1)
+           );
+           cursor: pointer;
+           user-select: none;
+
+           color: #ffff;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 80%;
+            height: 30px;
+            margin: 8px auto;
+            border-radius: 20px;
+            box-shadow:rgba(149,157,165,0.2) 0px 8px 20px ;
+        }
+
+        .del{
+            color: red;
+            line-height: 30px;
+        }
+       
+        .completed{
+           text-decoration: line-through;
+           opacity: 0.4;
+        }
+    
+    </style>
+</body>
+</html>
